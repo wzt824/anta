@@ -1,0 +1,101 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
+}
+html,body{
+    width: 100%;
+    background: #f9f9f9;
+}
+section{
+    width: 864px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 40px;
+    .contant{
+        width: 864px;
+        height: 540px;
+        margin: 0 auto 20px;
+        #list{
+            height: 200px!important;
+            .phone{
+                display: none;
+            }
+            .pwd{
+                display: none;
+            }
+        }
+        .reg_logo{
+            padding: 90px 0 10px!important;
+        }
+        .login_Box{
+            width: 358px;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #b0b0b0;
+            .login_xian{
+                border-top: 1px solid #e0e0e0;
+                position: relative;
+                .oth_type_txt{
+                    width: 72px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: -9px;
+                    background: #fff;
+                }
+            }
+            .icon{
+                margin: 30px 0;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                a{
+                    display: block;
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 10px;
+                    border-radius:50%; 
+                }
+                .zfb_icon{
+                    background-color: #8b8b8b;
+                    background-image: url(../img/service-icon.png);
+                    background-position: 84px -8px;
+                }
+                .qq_icon{
+                    background-color: #717171;
+                    background-image: url(../img/service-icon.png);
+                    background-position: 154px -8px;
+                }
+                .wb_icon{
+                    background-color: #525252;
+                    background-image: url(../img/service-icon.png);
+                    background-position: 121px -6px;
+                }
+                .zfb_icon:hover{
+                    background-color: #00aaee;
+                }
+                .qq_icon:hover{
+                    background-color: #0288d1;
+                }
+                .wb_icon:hover{
+                    background-color: #d32f2f;
+                }
+            }
+            .text{
+                display: flex;
+                justify-content: center;
+                color: #e1e1e7;
+                a{
+                    text-decoration: none;
+                    color: #757575;
+                    margin: 0 10px;
+                }
+                a:hover{
+                    color: #ff6700;
+                }
+            }
+        }
+    }
+}

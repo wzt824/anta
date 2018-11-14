@@ -27,10 +27,15 @@ header {
         width: 181px;
         height: 42px;
         float: left; }
-      header #head #h_left .logo_box {
+      header #head #h_left #welcomeUesr {
+        float: left;
+        margin: 20px 0 0 30px;
+        display: none; }
+      header #head #h_left #logo_box {
         line-height: 55px;
         margin-left: 50px;
-        float: left; }
+        float: left;
+        display: none; }
     header #head #h_right {
       line-height: 55px;
       float: right; }

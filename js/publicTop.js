@@ -119,6 +119,7 @@ $(function(){
                 width:"100%",
                 background:"black",
                 display : 'block',
+                boxShadow : "0 3px 10px 10px rgba(0,0,0,.9)",
                 position:"fixed",
                 paddingLeft:(width1-1190)/2 + "px",
                 whiteSpace:"nowrap",
@@ -138,6 +139,7 @@ $(function(){
             $(".hideFix")[0].style.height =  (h + 36) + 'px';
         }else{
             $(".nav").css({
+                boxShadow : 'none',
                 whiteSpace:"nowrap",
                 top:60
             });

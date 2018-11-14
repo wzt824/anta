@@ -24,11 +24,16 @@ header{
                 float: left;
 
             }
-            .logo_box{
+            #welcomeUesr{
+                float: left;
+                margin: 20px 0 0 30px;
+                display: none;
+            }
+            #logo_box{
                 line-height: 55px;
                 margin-left: 50px;
                 float: left;
-                
+                display: none;
             }
         }
         #h_right{

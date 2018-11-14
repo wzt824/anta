@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" />
     <link rel="stylesheet" href="css/publicTop.css">
 </head>
 <body>
@@ -10,9 +11,13 @@
         <div id="head">
             <div id="h_left">
                 <a class="logo" href="javascript:;"><img src="img/logo.gif" alt=""></a>
-                <p class="logo_box">
-                    <a href="javascript:;">登录 </a>|
-                    <a href="javascript:;">注册</a>
+                <div id="welcomeUesr">欢迎回家，
+                    <span id="welcome"></span> &nbsp; &nbsp; &nbsp;| 
+                    <a href="login.html" id="logout">注销</a>
+                </div>
+                <p id="logo_box">
+                    <a href="login.html">登录 </a>|
+                    <a href="reg.html">注册</a>
                 </p>
             </div>
             <div id="h_right">
@@ -103,9 +108,9 @@
             <div class="navBox2">
                 <ul class="navlis">
                     <li style="background:black" class><a href="javascript:;">首页</a></li>
-                    <li class  title="跑步系列"><a href="javascript:;">跑步</a></li>
+                    <li class  title="跑步系列"><a href="pro_list.html">跑步</a></li>
                     <li class  title="篮球系列"><a href="javascript:;">篮球</a></li>
-                    <li class  title="足球系列"><a href="javascript:;">足球</a></li>
+                    <li class  title="足球系列"><a href="pro_list.html">足球</a></li>
                     <li class  title="综训系列"><a href="javascript:;">健身</a></li>
                     <li class  title="生活系列"><a href="javascript:;">休闲</a></li>
                     <li class  title="配件系列"><a href="javascript:;">配件</a></li>
@@ -329,3 +334,27 @@
 </html>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/publicTop.js"></script>
+<script src="js/cookie.js"></script>
+<script>
+    $(function(){
+        $("#logout").click(function(){
+            //点击注销时，清除cookie
+            setCookie("userphone",$("#userphone").val(),-1);
+        });
+
+        var userphone = getCookie("userphone");
+        if(userphone!=null){
+            $("#welcomeUesr").css({"display":"block"});
+            $("#welcome").html(userphone);
+            //$("#login").css({"display":"none"});
+        }else{
+            $("#logo_box").css({"display":"block"});
+            //$("#welcomeUesr").css({"display":"none"});
+        }
+        
+
+        var user = checkCookie("userphone");
+        console.log(user);
+        
+    });
+</script>
