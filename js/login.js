@@ -84,7 +84,7 @@ $(function(){
         $(this).css({"background-color":"#c73339"});
     }
     $(".qq_reg")[0].onmouseleave = function(){
-        $(this).css({"background-color":"#fbb01f"});
+        $(this).css({"background-color":"#6da9de"});
     }
     //电话客服变色
     $(".btn_phone")[0].onmouseenter = function(){

@@ -107,14 +107,14 @@
             </div>
             <div class="navBox2">
                 <ul class="navlis">
-                    <li style="background:black" class><a href="javascript:;">首页</a></li>
-                    <li class  title="跑步系列"><a href="pro_list.html">跑步</a></li>
-                    <li class  title="篮球系列"><a href="javascript:;">篮球</a></li>
-                    <li class  title="足球系列"><a href="pro_list.html">足球</a></li>
-                    <li class  title="综训系列"><a href="javascript:;">健身</a></li>
-                    <li class  title="生活系列"><a href="javascript:;">休闲</a></li>
-                    <li class  title="配件系列"><a href="javascript:;">配件</a></li>
-                    <li class  title="儿童系列"><a href="javascript:;">儿童</a></li>
+                    <li style="background:black" class><a href="index.html">首页</a></li>
+                    <li class  title="跑步系列"><a href="pro_list.html"   class="productCookie">跑步</a></li>
+                    <li class  title="篮球系列"><a href="javascript:;"  class="productCookie">篮球</a></li>
+                    <li class  title="足球系列"><a href="pro_list.html"   class="productCookie">足球</a></li>
+                    <li class  title="综训系列"><a href="javascript:;"  class="productCookie">健身</a></li>
+                    <li class  title="生活系列"><a href="javascript:;"  class="productCookie">休闲</a></li>
+                    <li class  title="配件系列"><a href="javascript:;"  class="productCookie">配件</a></li>
+                    <li class  title="儿童系列"><a href="javascript:;"  class="productCookie">儿童</a></li>
                     <li class  title="定制"><a href="javascript:;"><img src="img/uni_logo.png" alt=""></a></li>
                 </ul>
                 <div class="navDown">
@@ -352,9 +352,21 @@
             //$("#welcomeUesr").css({"display":"none"});
         }
         
-
         var user = checkCookie("userphone");
-        console.log(user);
         
     });
+
+    function productCookie(){
+        let productsCookie = document.getElementsByClassName('productCookie');
+        console.log(productsCookie);
+		for(let i =0 ;i<productsCookie.length;i++){
+			productsCookie[i].onclick=function(){
+				let pC = productsCookie[i].innerHTML;
+				console.log(pC);
+				setCookie("selectPro",pC,12);
+				window.open("pro_list.html");
+			}
+		}
+	}
+	productCookie();
 </script>

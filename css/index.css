@@ -196,12 +196,14 @@ li {
   font-size: 12px;
   color: #000; }
   .productListBox .productList {
-    width: 1190px;
+    width: 1184px;
+    padding-left: 6PX;
     margin: 0 auto;
     text-align: center; }
     .productListBox .productList .proLis {
       width: 1190px;
       padding-top: 20px;
+      padding-left: 6PX;
       padding-bottom: 70px;
       overflow: hidden; }
       .productListBox .productList .proLis li {

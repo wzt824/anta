@@ -7,7 +7,7 @@
 	$conn = mysql_connect("localhost","root","root");
 	
 	//2）、选择数据库（找目的地）
-	if(!mysql_select_db("putian",$conn)){
+	if(!mysql_select_db("anta",$conn)){
 		die("数据库选择失败".mysql_error());
 	};
 	
@@ -36,7 +36,7 @@
 		"goodsName":"'.$query_row[1].'",
 		"goodsType":"'.$query_row[2].'",
 		"goodsPrice":"'.$query_row[3].'",
-		"goodsCount":"'.$query_row[22].'",
+		"goodsCount":"'.$query_row[4].'",
 		"goodsDesc":"'.$query_row[5].'",
 		"goodsImg":"'.$query_row[6].'",
 		"beiyong1":"'.$query_row[7].'",
@@ -51,7 +51,30 @@
 		"beiyong10":"'.$query_row[16].'",
 		"beiyong11":"'.$query_row[17].'",
 		"beiyong12":"'.$query_row[18].'",
-		"beiyong13":"'.$query_row[19].'"
+		"beiyong13":"'.$query_row[19].'",
+		"beiyong14":"'.$query_row[20].'",
+		"beiyong15":"'.$query_row[21].'",
+		"beiyong16":"'.$query_row[22].'",
+		"beiyong17":"'.$query_row[23].'",
+		"beiyong18":"'.$query_row[24].'",
+		"beiyong19":"'.$query_row[25].'",
+		"beiyong20":"'.$query_row[26].'",
+		"beiyong21":"'.$query_row[27].'",
+		"beiyong22":"'.$query_row[28].'",
+		"beiyong23":"'.$query_row[29].'",
+		"beiyong24":"'.$query_row[30].'",
+		"beiyong25":"'.$query_row[31].'",
+		"beiyong26":"'.$query_row[32].'",
+		"beiyong27":"'.$query_row[33].'"，
+		"beiyong28":"'.$query_row[34].'",
+		"beiyong29":"'.$query_row[35].'",
+		"beiyong30":"'.$query_row[36].'",
+		"beiyong31":"'.$query_row[37].'",
+		"beiyong32":"'.$query_row[38].'",
+		"beiyong33":"'.$query_row[39].'",
+		"beiyong34":"'.$query_row[40].'",
+		"beiyong35":"'.$query_row[41].'",
+		"beiyong36":"'.$query_row[42].'"
 		}';	
 		
 		

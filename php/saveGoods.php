@@ -21,6 +21,29 @@
 	$beiyong11 = $_REQUEST['beiyong11'];
 	$beiyong12 = $_REQUEST['beiyong12'];
 	$beiyong13 = $_REQUEST['beiyong13'];
+	$beiyong14  = $_REQUEST['beiyong14'];
+	$beiyong15  = $_REQUEST['beiyong15'];
+	$beiyong16  = $_REQUEST['beiyong16'];
+	$beiyong17  = $_REQUEST['beiyong17'];
+	$beiyong18  = $_REQUEST['beiyong18'];
+	$beiyong19  = $_REQUEST['beiyong19'];
+	$beiyong20  = $_REQUEST['beiyong20'];
+	$beiyong21  = $_REQUEST['beiyong21'];
+	$beiyong22  = $_REQUEST['beiyong22'];
+	$beiyong23 = $_REQUEST['beiyong23'];
+	$beiyong24 = $_REQUEST['beiyong24'];
+	$beiyong25 = $_REQUEST['beiyong25'];
+	$beiyong26 = $_REQUEST['beiyong26'];
+	$beiyong27  = $_REQUEST['beiyong27'];
+	$beiyong28  = $_REQUEST['beiyong28'];
+	$beiyong29  = $_REQUEST['beiyong29'];
+	$beiyong30  = $_REQUEST['beiyong30'];
+	$beiyong31  = $_REQUEST['beiyong31'];
+	$beiyong32  = $_REQUEST['beiyong32'];
+	$beiyong33  = $_REQUEST['beiyong33'];
+	$beiyong34  = $_REQUEST['beiyong34'];
+	$beiyong35  = $_REQUEST['beiyong35'];
+	$beiyong36 = $_REQUEST['beiyong36'];
 	
 	//2、数据保存在数据库中
 	//1）、建立连接（搭桥）
@@ -30,7 +53,7 @@
 	}
 	
 	//2）、选择数据库（找目的地）
-	if(!mysql_select_db("putian",$conn)){
+	if(!mysql_select_db("anta",$conn)){
 		die("数据库选择失败".mysql_error());
 	};
 	
@@ -39,7 +62,11 @@
 	,'".$goodsPrice."','".$goodsCount."','".$goodsDesc."','".$goodsImg."'
 	,'".$beiyong1."','".$beiyong2."','".$beiyong3."','".$beiyong4."'
 	,'".$beiyong5."','".$beiyong6."','".$beiyong7."','".$beiyong8."'
-	,'".$beiyong9."','".$beiyong10."','".$beiyong11."','".$beiyong12."','".$beiyong13."')";
+	,'".$beiyong9."','".$beiyong10."','".$beiyong11."','".$beiyong12."','".$beiyong13."','".$beiyong14."','".$beiyong15."','".$beiyong16."','".$beiyong17."'
+	,'".$beiyong18."','".$beiyong19."','".$beiyong20."','".$beiyong21."'
+	,'".$beiyong22."','".$beiyong23."','".$beiyong24."','".$beiyong25."','".$beiyong26."','".$beiyong27."','".$beiyong28."','".$beiyong29."','".$beiyong30."'
+	,'".$beiyong31."','".$beiyong32."','".$beiyong33."','".$beiyong34."'
+	,'".$beiyong35."','".$beiyong36."')";
 	
 
 	$count = mysql_query($sqlstr,$conn);
